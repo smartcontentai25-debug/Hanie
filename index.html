@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanie DJ | Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #213722; color: #e0e0d5; }
+        .animate-spin-slow { animation: spin 4s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="selection:bg-[#F8C662]">
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+        <video autoPlay loop muted playsInline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="https://res.cloudinary.com/dbkqmpy8i/video/upload/v1779369503/POST_HANIE_APOLO_4_1_cyyvv0.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-[#213722]/70 z-10"></div>
+        <div class="relative z-20 flex flex-col items-center">
+            <img src="https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779370794/ChatGPT_Image_21_may_2026_09_39_31_a.m._1_jtdhds.png" alt="Logo Hanie" class="w-72 md:w-[450px] mb-8 drop-shadow-2xl">
+            <p class="text-xl md:text-2xl text-[#F8C662] font-light tracking-widest uppercase mt-4">DJ & Productora</p>
+            <div class="mt-12 text-[#F8C662] animate-spin-slow">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="15" x2="12" y2="22"/></svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Musical Widgets -->
+    <section class="bg-[#2C263F] py-16 px-6">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7w1TZEWbV2Ipb4xitflZmH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="w-full">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2175098337&color=%23f8c662&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biografía Extendida -->
+    <section class="max-w-4xl mx-auto px-6 py-20 bg-[#213722]">
+        <h2 class="text-4xl font-bold mb-8 border-l-4 border-[#F8C662] pl-4 uppercase tracking-tighter text-[#F8C662]">Biografía</h2>
+        <p class="text-lg leading-relaxed mb-6 text-[#c0c0b0]">Hanie es una de las principales DJs y productoras de la escena electrónica en su natal Venezuela. Con una trayectoria iniciada en 2011, se ha consolidado como una figura clave en Latinoamérica, realizando giras por países como Argentina, Colombia, Ecuador, Chile y República Dominicana.</p>
+        <p class="text-lg leading-relaxed text-[#c0c0b0]">Desde pequeña, su interés por una amplia variedad de géneros musicales la llevó a estudiar ingeniería de sonido, lo que la condujo de forma natural a las cabinas de DJ para comenzar su carrera. Actualmente, está radicada en Barcelona, España, desde 2023, donde ha demostrado su talento en las principales fiestas y clubes del país.</p>
+
+        <h3 class="text-2xl font-bold mt-12 mb-4 text-[#F8C662] uppercase">Estilo Musical</h3>
+        <p class="text-lg leading-relaxed mb-4 text-[#c0c0b0]">Su propuesta se distingue por una armoniosa fusión entre el house y el techno. Su estilo es versátil y se caracteriza por la habilidad de combinar géneros de manera impecable. En sus presentaciones, Hanie logra crear una experiencia envolvente:</p>
+        <ul class="list-disc list-inside text-[#c0c0b0] space-y-2 mb-6">
+            <li>Sus tracks están llenos de energía.</li>
+            <li>Mantiene al público en constante conexión con la pista de baile.</li>
+            <li>Ofrece un viaje musical que recorre diversos géneros y épocas.</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-12 mb-4 text-[#F8C662] uppercase">Trayectoria y Escenarios</h3>
+        <p class="text-lg leading-relaxed mb-4 text-[#c0c0b0]">Hanie ha compartido cabina con grandes exponentes internacionales, tales como Pan-Pot, Paco Osuna, Valentino Kanzyani, Rossi y Dennis Cruz.</p>
+        <p class="text-lg leading-relaxed mb-6 text-[#c0c0b0]">Ha dejado su huella en ciudades como Madrid, Barcelona, Ibiza, Mallorca, Valencia y Galicia. Algunas de las prestigiosas cabinas donde ha actuado incluyen: Pacha, Tunnel, LaTerrazza, Brunch Electronik, The Basement Club, LAB theClub, Goya, Art y Lolas.</p>
+
+        <h3 class="text-2xl font-bold mt-12 mb-4 text-[#F8C662] uppercase">Flavor Swing</h3>
+        <p class="text-lg leading-relaxed text-[#c0c0b0]">Esta pasión por la exploración musical dio origen a Flavor Swing, una fiesta creada por Hanie que ha tenido gran éxito en Colombia, Venezuela, Panamá, México y España.</p>
+    </section>
+
+    <!-- Galería -->
+    <section class="py-20 px-6 max-w-6xl mx-auto bg-[#2C263F]">
+        <h2 class="text-4xl font-bold mb-12 text-center uppercase tracking-tighter text-[#F8C662]">Galería</h2>
+        <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- Flyers -->
+    <section class="py-20 px-6 max-w-6xl mx-auto bg-[#213722]">
+        <h2 class="text-4xl font-bold mb-12 text-center uppercase tracking-tighter text-[#F8C662]">Últimas Presentaciones</h2>
+        <div id="flyer-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 text-center bg-[#2C263F]">
+        <h2 class="text-3xl font-bold mb-10 uppercase tracking-tighter text-[#F8C662]">Contacto</h2>
+        <div class="flex flex-col items-center gap-6">
+            <a href="mailto:sid@cumacbookings.com" class="inline-flex items-center gap-3 bg-[#F8C662] hover:bg-[#e0b258] text-[#2C263F] transition px-8 py-4 font-bold uppercase tracking-widest">✉ sid@cumacbookings.com</a>
+            <a href="https://wa.me/584120000000" target="_blank" class="inline-flex items-center gap-3 bg-[#41644A] hover:bg-[#35523d] text-[#F8C662] transition px-8 py-4 font-bold uppercase tracking-widest">📱 Contacto WhatsApp</a>
+        </div>
+        <div class="mt-12 text-[#F8C662]"><a href="https://www.instagram.com/haniearraiz?igsh=MXN4OGt6N25iZGI3bw==" target="_blank">Instagram</a></div>
+        <p class="mt-12 text-xs text-[#595082] uppercase">© 2026 Hanie DJ - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const photos = ["https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779372683/CHC_1122_ztcu9w.jpg", "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779372692/DSC02555_ny8jsm.jpg", "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779372771/DSC05021_qbaiki.jpg", "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779372784/DSC05051_nvugn5.jpg", "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779372795/DSC05103_rmcq15.jpg"];
+        const flyers = ["https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779371353/ANOTR_lyqvg5.jpg", "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779371353/DENNIS_CRUZ_njck4f.jpg", "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779371353/ANOTR_lyqvg5.jpg"];
+        
+        const gGrid = document.getElementById('gallery-grid');
+        photos.forEach(p => gGrid.innerHTML += `<div class="overflow-hidden rounded-lg shadow-lg aspect-[4/3] border-2 border-[#595082]"><img src="${p}" class="w-full h-full object-cover hover:scale-110 transition duration-500"></div>`);
+        
+        const fGrid = document.getElementById('flyer-grid');
+        flyers.forEach(f => fGrid.innerHTML += `<div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-500 border border-[#41644A]"><img src="${f}" class="w-full h-auto object-cover"></div>`);
+    </script>
+</body>
+</html>
