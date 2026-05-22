@@ -67,6 +67,12 @@
         <p class="text-xl leading-relaxed text-inter text-[#D180C8]">Esta pasión por la exploración musical dio origen a Flavor Swing, una fiesta creada por Hanie que ha tenido gran éxito en Colombia, Venezuela, Panamá, México y España.</p>
     </section>
 
+    <!-- Nueva sección de Flyers -->
+    <section class="py-20 px-6 max-w-6xl mx-auto bg-[#814881]/5">
+        <h2 class="text-5xl font-normal mb-12 text-center uppercase tracking-wider text-[#F9CE75]">Flyers</h2>
+        <div id="flyers-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+    </section>
+
     <section class="py-20 px-6 max-w-6xl mx-auto bg-[#814881]/10">
         <h2 class="text-5xl font-normal mb-12 text-center uppercase tracking-wider text-[#F9CE75]">Galería</h2>
         <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
@@ -103,8 +109,19 @@
             "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779372795/DSC05103_rmcq15.jpg"
         ];
         
+        const flyers = [
+            "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779470649/WhatsApp_Image_2026-05-21_at_10.45.32_AM_v9lfxj.jpg",
+            "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779470648/WhatsApp_Image_2026-05-21_at_10.45.32_AM_1_j0hehf.jpg",
+            "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779371353/GOLFOS_qmdjai.jpg",
+            "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779371353/DENNIS_CRUZ_njck4f.jpg",
+            "https://res.cloudinary.com/dbkqmpy8i/image/upload/v1779371353/ANOTR_lyqvg5.jpg"
+        ];
+        
         const gGrid = document.getElementById('gallery-grid');
         photos.forEach(p => gGrid.innerHTML += `<div class="overflow-hidden rounded-sm shadow-lg aspect-[4/3] border border-[#814881]"><img src="${p}" class="w-full h-full object-cover hover:scale-105 transition duration-700"></div>`);
+        
+        const fGrid = document.getElementById('flyers-grid');
+        flyers.forEach(f => fGrid.innerHTML += `<div class="overflow-hidden rounded-sm shadow-lg aspect-[2/3] border border-[#814881]"><img src="${f}" class="w-full h-full object-cover hover:scale-105 transition duration-700"></div>`);
     </script>
 </body>
 </html>
